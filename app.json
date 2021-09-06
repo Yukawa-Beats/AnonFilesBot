@@ -1,15 +1,15 @@
 {
-    "name": "AnonFilesBot [ Avishkar Patil ]",
+    "name": "YB URL GENERATOR BOT ",
     "description": "A telegram bot that can upload telegram media files to anonfiles.com maintained by AvoshkarPatil",
-    "logo": "https://i.ibb.co/zZVrKKL/thumb.jpg",
+    "logo": "https://telegra.ph/file/02edc63667bee3ecb44a2.jpg",
     "keywords": [
         "Anonfiles",
         "Uploader",
         "Telegram Bot"
     ],
     "website": "https://avipatilweb.me",
-    "repository": "https://github.com/avipatilpro/AnonFliesBot",
-    "success_url": "https://telegram.me/AvishkarPatil",
+    "repository": "https://github.com/Yukawa-Beats/AnonFliesBot",
+    "success_url": "https://telegram.me/ybdemochannel",
     "env": {
         "BOT_TOKEN": {
             "description": "Your Telegram Bot Token from @BotFather",
