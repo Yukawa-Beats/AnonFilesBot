@@ -37,19 +37,19 @@ bot = Client(
 
 
 START_TEXT = """
-__Hᴇʟʟᴏ Dᴇᴀʀ I'ᴍ__ **AɴᴏɴFɪʟᴇsBᴏᴛ** 😎 \n\n__I Cᴀɴ Uᴘʟᴏᴀᴅ Fɪʟᴇs Tᴇʟᴇɢʀᴀ Tᴏ AɴᴏɴFɪʟᴇs__\n\n__MᴀɪɴTᴀɪɴᴇᴅ Bʏ__ :** @AvishkarPatil**
+__Hello__ {} I am **YB URL GENERATOR BOT** 😎 \n\n__I CAN CONVERT TELEGRAM FILES TO DIRECT LINK__\n\n__Maintained by__ :<a href='https://t.me/ybdemochannel'>YUKAWA BEATS</a>
 """
 HELP_TEXT = """
-**AɴᴏɴFɪʟᴇsBᴏᴛ Hᴇʟᴘ**\n\n__Sᴇɴᴅ ᴍᴇ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ ғɪʟᴇ, I'ʟʟ ᴜᴘʟᴏᴀᴅ ɪᴛ ᴛᴏ ᴀɴᴏɴғɪʟᴇs.ᴄᴏᴍ ᴀɴᴅ ɢɪᴠᴇ ʏᴏᴜ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ__\n\n__MᴀɪɴTᴀɪɴᴇᴅ Bʏ__ :** @AvishkarPatil**
+ഓ അവൻ ഹെല്പ് ചോതിച്ചു വന്നേക്കുന്നു😏..എന്തായാലും വന്നതല്ലേ പറഞ്ഞു തരാം..🤨താഴോട്ട് നോക്ക്👇\n\n**YB URL GENERATOR BOT Help**👇\n\n__SEND ME ANY TELEGRAM MEDIA FILE, I WILL GIVE YOU DIRECT DOWNLOAD LINK__\n\n__Maintained by__ :<a href='https://t.me/ybdemochannel'>YUKAWA BEATS</a>
 """
 ABOUT_TEXT = """
-- **Bot :** `AnonFilesBot`
-- **Creator :** [AvishkarPatil](https://telegram.me/AvishkarPatil)
-- **Source :** [Click here](https://github.com/avipatilpro/AnonFilesBot)
+- **Bot :** `YB URL GENERATOR BOT`
+- **Creator :** [YUKAWA BEATS](https://telegram.me/ybdemochannel)
+- **Source :** [Click here](https://github.com/Yukawa-Beats/AnonFilesBot)
 - **Language :** [Python3](https://python.org)
 - **Server :** [Heroku](https://heroku.com)
 
-__MᴀɪɴTᴀɪɴᴇᴅ Bʏ__ :** @AvishkarPatil
+മാസ്റ്റർ ബ്രെയിൻ😎😎 :<a href='https://t.me/ybdemochannel'>YUKAWA BEATS</a>
 """
 
 START_BUTTONS = InlineKeyboardMarkup(
@@ -118,7 +118,7 @@ async def upload(client, message):
             if user.status == "kicked":
                 await client.send_message(
                     chat_id=message.chat.id,
-                    text="**Sᴏʀʀʏ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ! Cᴏɴᴛᴀᴄᴛ** [Dᴇᴠᴇʟᴏᴘᴇʀ](https://telegram.me/AvishkarPatil).",
+                    text="സോറി മോനെ..നീ ബാൻ ആയി കേട്ടോ🤭😂",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -126,11 +126,11 @@ async def upload(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.chat.id,
-                text="**Pʟᴇᴀsᴇ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ Tᴏ Usᴇ Mᴇ 🏃‍♂**",
+                text="എന്റെ ചാനലിൽ ജോയിൻ ചെയ്യടാ...എന്നാലേ എന്നെക്കൊണ്ട് എന്തേലും നടക്കൂ..കേട്ടോ 🏃‍♂**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url=f"https://t.me/{Config.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("Join Channel", url=f"https://t.me/{Config.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -140,59 +140,61 @@ async def upload(client, message):
         except Exception:
             await client.send_message(
                 chat_id=message.chat.id,
-                text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ! Cᴏɴᴛᴀᴄᴛ ᴍʏ** [Dᴇᴠᴇʟᴏᴘᴇʀ](https://telegram.me/AvishkarPatil).",
+                text="എന്തോ പ്രശ്നം ഉണ്ടല്ലോ ചങ്ങായി",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
-    m = await message.reply("**Dᴏᴡɴʟᴏᴀᴅɪɴɢ Yᴏᴜʀ FIʟᴇs Tᴏ Mʏ Sᴇʀᴠᴇʀ ....** 😈")
+    m = await message.reply("നിങ്ങളുടെ ഫയൽസ് എന്റെ സെർവേറിലേക്ക് ഡൌൺലോഡ് ചെയ്യുകയാണ് ദയവായി കാത്തിരിക്കൂ.. 😈")
     now = time.time()
     sed = await bot.download_media(
                 message, DOWNLOAD,
           progress=progress,
           progress_args=(
-            "**Uᴘʟᴏᴀᴅ Pʀᴏᴄᴇss Sᴛᴀʀᴇᴅ Wᴀɪᴛ ᴀɴᴅ Wᴀᴛᴄʜ Mᴀɢɪᴄ**\n**Iᴛs Tᴀᴋᴇ ᴛɪᴍᴇ Aᴄᴄᴏʀᴅɪɴɢ Yᴏᴜʀ Fɪʟᴇs Sɪᴢᴇ** \n\n**ᴇᴛᴀ:** ", 
+            "അപ്‌ലോഡ് പ്രോസസ് തൊടങ്ങി മോനെ..ഇനി എന്റെ മാജിക് കണ്ടോ..ഓം ഹ്രീം കുട്ടിച്ചാത്താ👹\nനിന്റെ ഫയല്സിന്റെ സൈസ് നു അനുസരിച്ചുള്ള സമയം എടുക്കും കേട്ടോ..🤧 \n\nഏകദേശം:** ", 
             m,
             now
             )
         )
     try:
         files = {'file': open(sed, 'rb')}
-        await m.edit("**Uᴘʟᴏᴀᴅɪɴɢ ᴛᴏ AɴᴏɴFIʟᴇs Sᴇʀᴠᴇʀ Pʟᴇᴀsᴇ Wᴀɪᴛ**")
+        await m.edit("എന്റെ സെർവേറിലേക്ക് ഫയൽസ് അപ്‌ലോഡ് ആകുന്നുണ്ട്..ദിപ്പൊ ശരിയാക്കിത്തരാം..🤒")
         callapi = requests.post("https://api.anonfiles.com/upload", files=files)
         text = callapi.json()
         output = f"""
-<u>**Fɪʟᴇ Uᴘʟᴏᴀᴅᴇᴅ Tᴏ AɴᴏɴFɪʟᴇs**</u>
+<u>മോനെ ഫയൽ സെറ്റ് ആയിട്ടുണ്ട്..എടുത്തോണ്ട് പൊക്കോ..🤪*/u>
 
-**📂 Fɪʟᴇ Nᴀᴍᴇ:** {text['data']['file']['metadata']['name']}
+📂 ഫയലിന്റെ പേര്: {text['data']['file']['metadata']['name']}
 
-**📦 Fɪʟᴇ Sɪᴢᴇ:** {text['data']['file']['metadata']['size']['readable']}
+📦 ഫയലിന്റെ വലിപ്പം: {text['data']['file']['metadata']['size']['readable']}
 
-**📥Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ:** `{text['data']['file']['url']['full']}`
+📥ഇന്നാ ലിങ്ക്👉: `{text['data']['file']['url']['full']}`
 
-🔅__MᴀɪɴTᴀɪɴᴇᴅ Bʏ__ :** @AvishkarPatil**"""
+🔅മാസ്റ്റർ ബ്രെയിൻ😎😎 :<a href='https://t.me/ybdemochannel'>YUKAWA BEATS</a>
+   ഡൌൺലോഡ് ചെയ്യാൻ താഴെ തൊട് 👇
+"""
         btn = InlineKeyboardMarkup(
-                                [[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ Fɪʟᴇ", url=f"{text['data']['file']['url']['full']}")]])
+                                [[InlineKeyboardButton("DOWNLOAD", url=f"{text['data']['file']['url']['full']}")]])
         await m.edit(output, reply_markup=btn)
         os.remove(sed)
     except Exception:
-        await m.edit("__Pʀᴏᴄᴇss Fᴀɪʟᴇᴅ, Mᴀʏʙᴇ Tɪᴍᴇ Oᴜᴛ Dᴜᴇ Tᴏ Lᴀʀɢᴇ Fɪʟᴇ Sɪᴢᴇ!__")
+        await m.edit("ഇത് വലിയ സൈസ് ആണ്..ഇത് എന്നെകൊണ്ട് പറ്റും എന്ന് തോന്നുന്നില്ല ഷാജിയെട്ടാ🙏")
         return
       
 @bot.on_message(filters.regex(pattern="https://cdn-") & filters.private & ~filters.edited)
 async def url(client, message):
-    msg = await message.reply("__Cʜᴇᴄᴋɪɴɢ Uʀʟ...__")
+    msg = await message.reply("ലിങ്ക് നോക്കട്ടെ👀")
     lenk = message.text
-    cap = "© @AvishkarPatil"
+    cap = "മാസ്റ്റർ ബ്രെയിൻ😎😎 :<a href='https://t.me/ybdemochannel'>YUKAWA BEATS</a>"
     thumb = "./thumb.jpg"
     try:
-         await msg.edit("**Bɪɢ Fɪʟᴇs Wɪʟʟ Tᴀᴋᴇ Mᴏʀᴇ Tɪᴍᴇ, Dᴏɴ'ᴛ Pᴀɴɪᴄ!**")
+         await msg.edit("പേടിക്കണ്ട മോനെ..വലിയ ഫയല്സിന് ടൈം എടുക്കും..കെട്ടോ😼")
          filename = await download(lenk)
-         await msg.edit("Uploading File To Telegram...")
+         await msg.edit("ടെലിഗ്രാമിലേക്ക് ഫയൽ അപ്‌ലോഡ് ചെയ്യുന്നുണ്ട്...")
          await message.reply_document(filename, caption=cap, thumb=thumb)
          await msg.delete()
          os.remove(filename)
     except Exception:
-        await msg.edit("__Pʀᴏᴄᴇss Fᴀɪʟᴇᴅ, Mᴀʏʙᴇ Tɪᴍᴇ Oᴜᴛ Dᴜᴇ Tᴏ Lᴀʀɢᴇ Fɪʟᴇ Sɪᴢᴇ!__")
+        await msg.edit("ഇത് വലിയ സൈസ് ആണ്..ഇത് എന്നെകൊണ്ട് പറ്റും എന്ന് തോന്നുന്നില്ല ഷാജിയെട്ടാ🙏")
         
 async def download(url):
     ext = url.split(".")[-1]
@@ -207,5 +209,5 @@ async def download(url):
         
         
 bot.start()
-print("AnonFilesBot Is Started!,  if Have Any Problems contact @AvishkarPatil")
+print("YB URL GENERATOR BOT Is Started")
 idle()
