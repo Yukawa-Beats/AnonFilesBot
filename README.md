@@ -38,3 +38,4 @@ python3 bot.py
 ## Credits
 
 - [Avishkar Patil](https://github.com/avipatilpro)
+- [Yukawa Beats](https://github.com/Yukawa-Beats)
