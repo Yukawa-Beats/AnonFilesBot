@@ -37,5 +37,5 @@ python3 bot.py
 
 ## Credits
 
-- [Avishkar Patil](https://github.com/avipatilpro)
+- [Avishkar Patil](https://github.com/avipatilpro) For The Repo
 - [Yukawa Beats](https://github.com/Yukawa-Beats)
